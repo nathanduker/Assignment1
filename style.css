@@ -10,9 +10,10 @@ body {
 }
 
 #startContainer {
+    animation: float 4s linear infinite;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 36.5%;
     width: 40vw;
     height: 40vw;
     max-width: 400px;
@@ -28,9 +29,11 @@ body {
 
 .flavortext{
     font-size: 1.1em;
+    padding: 20px;
 }
 
 #fragment, #fragment2 {
+    animation: float 4s linear infinite;
     position: fixed;
     top: 40%;
     width: 10vw;
@@ -50,8 +53,14 @@ body {
     margin: 0; /* Reset default margin for <p> element */
 }
 
-#fragment:hover, #fragment2:hover {
-    transform: rotate(45deg) scale(1.5); /* Rotate and scale the fragment on hover */
+#fragment:hover {
+    transform: rotate(45deg) scale(1.1); /* Rotate and scale the fragment on hover */
+}
+
+#fragment2:hover{
+
+    transform: rotate(-45deg) scale(1.1); /* Rotate and scale the fragment on hover */
+
 }
 
 #fragment {
@@ -79,9 +88,11 @@ body {
 @keyframes float {
     0% {
         transform: translateY(0);
+        
     }
     50% {
         transform: translateY(-20px);
+        transform: scale(1.1);
     }
     100% {
         transform: translateY(0);
