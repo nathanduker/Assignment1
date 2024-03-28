@@ -1,79 +1,96 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
-    font-family: "Stalinist One", sans-serif; /* Set a default font family */
-    font-size: 16px; /* Set a default font size */
-    line-height: 1.5; /* Set a default line height */
-    background-color: black; /* Set a default background color */
-    color: white; /* Set a default text color */
+    min-height: 100vh;
+    font-family: "Stalinist One", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
 }
 
 #startContainer {
-    position: fixed; /* Fixed position so it stays centered even when scrolling */
-    top: 50%; /* Place the top edge of the div at 50% from the top of the viewport */
-    left: 50%; /* Place the left edge of the div at 50% from the left of the viewport */
-    width: 40vw; /* Responsive width */
-    height: 40vw; /* Responsive height */
-    max-width: 400px; /* Maximum width */
-    max-height: 400px; /* Maximum height */
-    transform: translate(-50%, -50%); /* Use a transform to move the div back by half of its own width and height, effectively centering it */
-    border: 2px solid rgb(255, 255, 255); /* Set border style */
-    border-radius: 50%; /* Makes the border circular */
-    display: flex; /* Use flexbox to center content horizontally and vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    /*transition: background-color 0.3s; /* Add transition effect for smooth color change */
-    transition: background-image 0.3s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease-in-out; /* Change the transition to include the background property */
+}
+
+#fragment, #fragment2 {
+    position: fixed;
+    top: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: aliceblue;
+    transition: transform 0.3s, width 0.3s, height 0.3s; /* Add transition for transform, width, and height */
+}
+
+#fragment:hover, #fragment2:hover {
+    transform: rotate(45deg) scale(1.5); /* Rotate and scale the fragment on hover */
+}
+
+#fragment {
+    left: 5%;
+}
+
+#fragment2 {
+    left: 85%;
 }
 
 #startContainer:hover {
-    /*background-color: white; /* Change background color on hover */
-    background-image: url('/assets/images/soul.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+    background: url('/assets/images/soul.jpg') center/cover no-repeat; /* Use background shorthand property */
 }
 
 #startButton {
-    animation: float 4s linear infinite; /* Customize animation duration */
-    padding: 10px 20px; /* Adjust padding */
-    font-size: 1.2em; /* Adjust font size */
+    animation: float 4s linear infinite;
+    padding: 10px 20px;
+    font-size: 1.7em;
 }
 
 #startContainer:hover #startButton {
-    color: black; /* Change text color on hover */
+    color: black;
 }
 
 @keyframes float {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     50% {
-      transform: translateY(-20px); /* Adjust the floating height */
+        transform: translateY(-20px);
     }
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
-#fragmentContainer{
-    position: fixed; /* Fixed position so it stays centered even when scrolling */
-    display: flex; /* Use flexbox to center content horizontally and vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+#fragmentContainer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.7s;
+    padding: 20px;
 }
 
 footer {
     text-align: center;
-    margin-top: auto; /* Push the footer to the bottom of the page */
-    width: 100%; /* Make sure the footer spans the full width */
+    margin-top: auto;
+    width: 100%;
 }
 
 #decal1 {
-    width: 20%; /* Responsive width */
-    max-width: 100px; /* Maximum width */
-    height: auto; /* Maintain aspect ratio */
+    width: 20%;
+    max-width: 100px;
+    height: auto;
 }
