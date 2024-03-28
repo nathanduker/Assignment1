@@ -52,6 +52,14 @@ body {
     }
 }
 
+#fragmentContainer{
+    position: fixed; /* Fixed position so it stays centered even when scrolling */
+    display: flex; /* Use flexbox to center content horizontally and vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+}
+
 footer {
     text-align: center;
     margin-top: auto; /* Push the footer to the bottom of the page */
