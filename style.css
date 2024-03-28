@@ -33,10 +33,16 @@ body {
 #fragment, #fragment2 {
     position: fixed;
     top: 50%;
-    width: 5vw;
-    height: 5vw;
+    width: 10vw;
+    height: 10vw;
     background-color: aliceblue;
+    text-align: center;
+    justify-content: center;
     transition: transform 0.3s, width 0.3s, height 0.3s; /* Add transition for transform, width, and height */
+}
+
+#fragment p, #fragment2 p{
+    color: black;
 }
 
 #fragment:hover, #fragment2:hover {
