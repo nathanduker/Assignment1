@@ -23,11 +23,17 @@ body {
     display: flex; /* Use flexbox to center content horizontally and vertically */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+    /*transition: background-color 0.3s; /* Add transition effect for smooth color change */
+    transition: background-image 0.3s ease;
 }
 
 #startContainer:hover {
-    background-color: white; /* Change background color on hover */
+    /*background-color: white; /* Change background color on hover */
+    background-image: url('/assets/images/soul.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 #startButton {
