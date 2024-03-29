@@ -22,7 +22,7 @@ This project simply exists as a simple site using regular HTML and CSS, bringing
 <!-- any installation needs should be defined -->
 ### Installation
 
-For this particular project, there are no specific installation requirements. You can download the source code, open up the folder and load up the index.html file in any browser. 
+For this particular project, there are no specific installation requirements. You can download the source code, open up the folder and load up the index.html file in any browser using a local server. 
 
 <!-- Write instructions on how to start working on your project -->
 ### Develop
