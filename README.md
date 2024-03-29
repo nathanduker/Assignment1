@@ -53,7 +53,7 @@ This project is hosted on Github and Glitch.io. Github renders markdown files.
 <!-- thank and reference all the things that made your project happen -->
 ## Acknowledgements
 
-* [Nujabes - Feather](https://creativecommons.org/licenses/by/4.0/) for their licensing documentation
+* [Nujabes - Feather] for the track. 
 * [PurpleBooth's Readme Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 
 ***
